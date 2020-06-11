@@ -1,0 +1,45 @@
+
+footer {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer h5 {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+footer .sectionOne, footer .sectionTwo, footer .sectionThree {
+    padding: 50px;
+    background-color: rgb(48, 48, 48);
+}
+.splitLine {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.4;
+    margin-bottom: 20px;
+}
+footer li {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 300;
+}
+footer .socialIconWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 30%;
+    background-color: transparent;
+    margin-bottom: 40px;
+}
+.socialIconWrapper img {
+    height: 20px;
+}
+.socialIconWrapper :nth-child(3) {
+    height: 30px;
+}

@@ -1,15 +1,14 @@
 
 /* Navigation */
 
-nav {
-    position: fixed;
+#navBanner {
+    position: absolute;
     height: 180px;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    position: fixed;
-    z-index: 2;
+    z-index: 1;
     display: grid;
-    grid-template-rows: 40% 40% 1fr;
+    grid-template-rows: 40% 40%;
 }
 .navLogo {
     grid-row: 1/2;
@@ -66,33 +65,36 @@ nav {
 
 /* Bottom Nav */
 
-.navBar {
-    height: 100%;
+#navBar {
+    position: absolute;
+    margin-top: 180px;
+    z-index: 1;
+    height: 50px;
     width: 100%;
     background-color: aqua;
 }
-.navBar ul {
+#navBar ul {
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 50%;
 }
-.navBar ul div {
+#navBar ul div {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.navBar ul :nth-child(6) {
+#navBar ul :nth-child(6) {
     display: flex;
     justify-content: flex-start;
 }
-.navBar ul :nth-child(6) li {
+#navBar ul :nth-child(6) li {
     padding-left: 22px;
     font-weight: 400;
     font-size: 20px;
 }
-.navBar ul div li {
+#navBar ul div li {
     margin: 0 10px;
     font-size: 14px;
     font-weight: bold;
@@ -101,15 +103,15 @@ nav {
 
 /* Navbar Colours */
 
-.navBar ul .home, .navBar ul .whyAttend {
+#navBar ul .home, #navBar ul .whyAttend {
     background-color: #00497D;
 }
-.navBar .speakers {
+#navBar .speakers {
     background-color: #F18C02;
 }
-.navBar ul .agenda, .navBar ul .contactUs {
+#navBar ul .agenda, #navBar ul .contactUs {
     background-color: #4E9AD3;
 }
-.navBar ul .entrance {
+#navBar ul .entrance {
     background-color: #797978;
 }

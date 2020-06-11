@@ -1,10 +1,9 @@
 import React from 'react';
+import QouteBanner from '../components/QuoteBanner';
 import seminar from '../images/seminar.jpg';
+import downArrow from '../images/icons/down-arrow.png';
 
 class Speakers extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         const array = 
@@ -12,7 +11,7 @@ class Speakers extends React.Component {
         "speaker05", "speaker06", "speaker07", "speaker08"];
 
         const images = array.map(image => {
-           return <img key={image} src={require(`../images/speakers/${image}.png`)} />
+           return <img key={image} src={require(`../images/speakers/${image}.png`)} alt="speakers" />
         });
 
         return (
@@ -59,40 +58,46 @@ class Speakers extends React.Component {
 
                     <div className="speakerRow">
                     
-                    <div className="speakerBox">
-                        {images[4]}
-                        <div className="infoBox">
-                            <h4>Speaker Name</h4>
-                            <p>Job Title, Department, <br></br> 
-                            Name, Company Name</p>
+                        <div className="speakerBox">
+                            {images[4]}
+                            <div className="infoBox">
+                                <h4>Speaker Name</h4>
+                                <p>Job Title, Department, <br></br> 
+                                Name, Company Name</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="speakerBox">
-                        {images[5]}
-                        <div className="infoBox">
-                            <h4>Speaker Name</h4>
-                            <p>Job Title, Department, <br></br> 
-                            Name, Company Name</p>
+                        <div className="speakerBox">
+                            {images[5]}
+                            <div className="infoBox">
+                                <h4>Speaker Name</h4>
+                                <p>Job Title, Department, <br></br> 
+                                Name, Company Name</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="speakerBox">
-                        {images[6]}
-                        <div className="infoBox">
-                            <h4>Speaker Name</h4>
-                            <p>Job Title, Department, <br></br> 
-                            Name, Company Name</p>
+                        <div className="speakerBox">
+                            {images[6]}
+                            <div className="infoBox">
+                                <h4>Speaker Name</h4>
+                                <p>Job Title, Department, <br></br> 
+                                Name, Company Name</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="speakerBox">
-                        {images[7]}
-                        <div className="infoBox">
-                            <h4>Speaker Name</h4>
-                            <p>Job Title, Department, <br></br> 
-                            Name, Company Name</p>
+                        <div className="speakerBox">
+                            {images[7]}
+                            <div className="infoBox">
+                                <h4>Speaker Name</h4>
+                                <p>Job Title, Department, <br></br> 
+                                Name, Company Name</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div className="downArrow">
+                    <img src={downArrow} alt="down arrow"/>
                 </div>
+
+                <QouteBanner />
             </div>
         )
 

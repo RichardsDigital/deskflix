@@ -17,8 +17,8 @@ h1 {
 /* Speakers Page */
 
 .speakersPage {
-    /* margin-top: 180px; */
-    position: absolute;
+    padding-top: 230px;
+    position: relative;
     width: 100%;
     height: 100%;
     display: grid;
@@ -26,7 +26,7 @@ h1 {
 .speakersBackground {
     position: absolute;
     width: 100%;
-    height: 900px;
+    height: 100%;
     opacity: 14%;
 }
 .speakersPage h2 {
@@ -78,4 +78,15 @@ h1 {
     font-weight: 500;
     line-height: 18px;
     opacity: 0.6;
+}
+
+.downArrow {
+    justify-self: center;
+    margin: 38px 0;
+    height: 40px;
+    width: 40px;
+}
+.downArrow img {
+    height: 100%;
+    width: 100%;
 }
