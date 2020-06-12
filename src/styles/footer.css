@@ -39,6 +39,7 @@ footer .socialIconWrapper {
 }
 .socialIconWrapper img {
     height: 20px;
+    margin: 0 10px 0 0;
 }
 .socialIconWrapper :nth-child(3) {
     height: 30px;

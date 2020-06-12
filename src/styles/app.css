@@ -60,6 +60,7 @@ h1 {
     grid-template-rows: 60% 1fr;
 }
 .speakerBox img {
+    object-fit: cover;
     grid-row: 1/2;
     height: 100%;
     width: 100%;
