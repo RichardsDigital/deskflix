@@ -40,3 +40,14 @@
     color: white;
     text-align: center;
 }
+
+/* animations */
+
+.left:hover {
+    transform: translateX(-10px);
+    transition: 0.4s;
+}
+.right:hover {
+    transform: translateX(10px);
+    transition: 0.4s;
+}

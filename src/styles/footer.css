@@ -44,3 +44,14 @@ footer .socialIconWrapper {
 .socialIconWrapper :nth-child(3) {
     height: 30px;
 }
+
+/* animations */
+
+footer .sectionThree li:hover {
+    transform: none;
+}
+
+footer li:hover {
+    transform: translateX(5px);
+    transition: 0.2s;
+}

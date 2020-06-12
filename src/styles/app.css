@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style: none;
+    cursor: pointer;
 }
 
 #background {
@@ -53,6 +54,7 @@ h1 {
     margin-bottom: 38px;
 }
 .speakerBox {
+    opacity: 100%;
     height: 100%;
     width: 21%;
     background-color: white;
@@ -86,8 +88,22 @@ h1 {
     margin: 38px 0;
     height: 40px;
     width: 40px;
+    z-index: 2;
 }
 .downArrow img {
     height: 100%;
     width: 100%;
+}
+
+/* animations */
+
+.speakerBox:hover {
+    transform: translateY(-4px);
+    opacity: 80%;
+    transition: 0.4s;
+}
+
+.downArrow img:hover {
+    transform: translateY(8px);
+    transition: 0.4s;
 }
