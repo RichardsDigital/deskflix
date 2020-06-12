@@ -99,7 +99,7 @@ h1 {
 
 .speakerBox:hover {
     transform: translateY(-4px);
-    opacity: 80%;
+    opacity: 0.8;
     transition: 0.4s;
 }
 
